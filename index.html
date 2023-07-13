@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ClickShop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>BelloNex</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-items-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+     
+      <img src="BelloNex1.png" alt="BelloNex">
+    </section>
+
+    <section id="shop" style="display: none;">
+      <h2>Available Products</h2>
+      <div class="product">
+        <img src="bello5.jpeg" alt="Product 1">
+        <h3>ADIDAS SNEAKERS</h3>
+        <p>$19.99</p>
+        <button class="add-to-cart" data-product-id="1" data-product-name="ADIDAS SNEAKERS" data-product-price="19.99">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="bello6.jpeg" alt="Product 2">
+        <h3>ADIDAS BACKPACK</h3>
+        <p>$9.99</p>
+        <button class="add-to-cart" data-product-id="2" data-product-name="ADIDAS BACKPACK" data-product-price="9.99">Add to Cart</button>
+      </div>
+
+      </div>
+<div class="product">
+        <img src="D:\bello\bello7.jpeg"  alt="Product 3">
+        <h3>ADIDAS CAP</h3>
+        <p>$8.99</p>
+ <button class="add-to-cart" data-product-id="3" data-product-name="ADIDAS CAP" data-product-price="8.99">Add to Cart</button>
+      </div>
+<div class="product">
+        <img src="D:\bello\bello8.jpeg"  alt="Product 4">
+        <h3>SUNGLASS</h3>
+        <p>$18.99</p>
+<button class="add-to-cart" data-product-id="4" data-product-name="SUNGLASS" data-product-price="18.99">Add to Cart</button>
+      </div>
+<div class="product">
+        <img src="D:\bello\bello9.jpeg"  alt="Product 5">
+        <h3>ADIDAS WATER BOTTLE</h3>
+        <p>$9.99</p>
+<button class="add-to-cart" data-product-id="5" data-product-name="ADIDAS WATER BOTTLE" data-product-price="9.99">Add to Cart</button>
+      </div>
+<div class="product">
+        <img src="D:\bello\bello10.jpeg" alt="Product 6">
+        <h3>ADIDAS JACKET</h3>
+        <p>$29.99</p>
+<button class="add-to-cart" data-product-id="6" data-product-name="ADIDAS JACKET" data-product-price="29.99">Add to Cart</button>
+
+      </div>
+
+<div class="product">
+        <img src="D:\bello\bello11.jpeg" alt="Product 7">
+        <h3>ADIDAS EAR PODS</h3>
+        <p>$19.99</p>
+<button class="add-to-cart" data-product-id="7" data-product-name="ADIDAS EAR PODS" data-product-price="19.99">Add to Cart</button>
+
+      </div>
+<div class="product">
+        <img src="D:\bello\bello12.jpeg" alt="Product 8">
+        <h3>ADIDAS T SHIRT</h3>
+        <p>$23.99</p>
+<button class="add-to-cart" data-product-id="8" data-product-name="ADIDAS T SHIRT" data-product-price="23.99">Add to Cart</button>
+
+      </div>
+      <!-- Add more product divs as needed -->
+    </section>
+
+    <section id="about" style="display: none;">
+      <h2>About ClickShop</h2>
+      <p>ClickShop: Revolutionizing E-commerce with Innovation</p>
+      <p>ClickShop is a startup built by a student in Kristu Jayanti College. It is based in Bangalore, offering innovative products to customers.</p>
+    </section>
+
+    <section id="contact" style="display: none;">
+      <h2>Contact Us</h2>
+      <p>Email: clickshop@gmail.com</p>
+      <p>Phone: 180000400300</p>
+    </section>
+
+    <section id="cart" style="display: none;">
+      <h2>Cart</h2>
+      <div id="cart-items"></div>
+      <button id="buy-button">Buy</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
