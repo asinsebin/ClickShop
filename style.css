@@ -5,14 +5,24 @@ body {
 }
 
 header {
-  background-color: #f5f5f5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 1;
 }
 
 .logo h1 {
   margin: 0;
+  color: gold;
+  font-size: 36px; /* Adjust font size as needed */
+  font-family: 'Arial', sans-serif; /* Adjust font family as needed */
 }
 
 nav ul {
@@ -26,7 +36,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 main {
@@ -39,38 +49,59 @@ section {
 
 section h2 {
   margin-top: 0;
+  color: black; /* Change font color to black */
 }
 
-/* Add a CSS rule for the home section background */
+/* Add a CSS rule for responsive layout */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Add a CSS rule for hovering effect */
+nav ul li a {
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: gold;
+}
+
+/* Add a CSS rule for full background image */
 section#home {
-  background-image: url('D:\bello\bello85.png');
-  background-size: cover;
+  position: relative;
+  background-image: url('path/to/bellonex1.png');
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: gold;
   text-align: center;
+  color: black; /* Change font color to black */
 }
 
-.product {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-.product img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+section#home h1 {
+  color: black; /* Change font color to black */
+  font-size: 48px; /* Adjust font size as needed */
+  font-family: 'Arial', sans-serif; /* Adjust font family as needed */
+  margin-top: 0;
 }
-
-.product h3, .product p {
-  margin: 0;
-}
-/* Add the following styles to your existing CSS rules */
 
 /* Cart icon */
 .cart-icon {
@@ -79,7 +110,7 @@ section#home {
 
 .cart-icon i {
   font-size: 24px;
-  color: #333;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -94,21 +125,15 @@ section#home {
   border-radius: 50%;
 }
 
-/* Cart section */
-#cart {
-  text-align: center;
+/* Add a CSS rule for hovering effect on cart icon */
+.cart-icon i:hover {
+  color: gold;
 }
 
-#cart-items {
-  margin-bottom: 10px;
+/* Add a CSS rule for hovering effect on buy button */
+#buy-button:hover {
+  background-color: gold;
+  color: #333;
 }
 
-#buy-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
